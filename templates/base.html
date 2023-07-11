@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,8 +30,8 @@
                     <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
                 {% else %}
                     <li><a href="#">Groups</a></li>
-                    <li><a href="{% url 'accounts:login' %}">Groups</a></li>
-                    <li><a href="{% url 'accounts:signup' %}">Groups</a></li>
+                    <li><a href="{% url 'accounts:login' %}">Login</a></li>
+                    <li><a href="{% url 'accounts:signup' %}">SignUp</a></li>
                 {% endif %}
             </ul>
         </div>
